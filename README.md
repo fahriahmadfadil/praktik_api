@@ -1,2 +1,4 @@
-# praktik_api
-Membuat api dengan express js, sequelize, dan buat auth
+# Praktik API
+- Latihan Express
+- Latihan Sequelize
+- Latihan CRUD Table Cars
