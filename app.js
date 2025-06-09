@@ -9,7 +9,9 @@ app.use(bodyParser.json());
 
 // panggil semua routing yang ada
 const routeCars = require('./routes/cars.route');
+const routeOrders = require('./routes/orders.route');
 app.use(routeCars);
+app.use(routeOrders);
 
 // panggil package yang dipakai/perlukan
 // const optionAllow = {
