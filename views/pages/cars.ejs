@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <!-- Mendefinisikan judul website, css, SEO -->
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <!-- Body = Ini Tempat tampilan website dibuat -->
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <main>
+            <div class="jumbotron">
+                <h3>Data Mobil</h3>
+                <p>Produk mobil kami sebagai berikut : </p>
+                <table>
+                    <thead>
+                        <!-- tr = table row/baris -->
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Mobil</th>
+                            <th>Brand</th>
+                            <th>Tahun Release</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(function(value){ %>
+                        <tr>
+                            <td><%= value.id %></td>
+                            <td><%= value.name %></td>
+                            <td><%= value.brand %></td>
+                            <td><%= value.year %></td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Footer = Bagian bawah website,biasanya informasi copyright dll -->
+             <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>
